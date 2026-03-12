@@ -1,0 +1,51 @@
+.todo-app {
+    background: linear-gradient(to right, #4a90e2, #50e3c2);
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 20px;
+}
+
+.task-item {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-item.completed {
+    text-decoration: line-through;
+    background-color: #f0f0f0;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.filter-button {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filter-button:hover {
+    background-color: #357ABD;
+}
+
+@media (max-width: 600px) {
+    .task-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .filter-buttons {
+        flex-direction: column;
+    }
+}
